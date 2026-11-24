@@ -1,1 +1,3 @@
 # Electric-Circuits-and-Controls-OA-Textbook
+
+Welcome to the GitHub repo hosting the Electric Circuits and Controls open-access textbook. This project is being led by engineering professors at Wake Forest University to...
