@@ -9,10 +9,10 @@ project:
   # github:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
-    - file: intro.md
-    - file: fundamental_concepts
+    - file: BookFiles/intro.md
+    - file: BookFiles/fundamental_concepts
       children:
-        - file: electric_forces
+        - file: BookFiles/electric_forces
 site:
 
   parts:
@@ -20,4 +20,4 @@ site:
   template: book-theme
   options:
      favicon: favicon.ico
-     logo: WF_icon_black.jpg
+     logo: BookFiles/OA Textbook Logos/circuits-and-controls-icon.svg
