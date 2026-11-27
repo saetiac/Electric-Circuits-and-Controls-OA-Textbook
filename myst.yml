@@ -13,6 +13,9 @@ project:
     - file: BookFiles/fundamental_concepts
       children:
         - file: BookFiles/electric_forces
+          children:
+          - file: BookFiles/Sensors.md
+    - file: BookFiles/Digital_Circuits.md
 site:
 
   parts:
