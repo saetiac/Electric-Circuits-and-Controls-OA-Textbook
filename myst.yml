@@ -16,7 +16,7 @@ project:
 site:
 
   parts:
-    primary_sidebar_footer: primary-sidebar-footer.md
+    primary_sidebar_footer: BookFiles/primary-sidebar-footer.md
   template: book-theme
   options:
      favicon: favicon.ico
