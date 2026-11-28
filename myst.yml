@@ -61,8 +61,6 @@ project:
         - file: BookFiles/Control_Systems/PID_Controller
 
     - file: BookFiles/Labs/Labs.md
-      children:
-      - file: BookFiles/Labs/EGR311_wk#01_labs
 
     - file: BookFiles/Math_Basics/Math_Basics.md
       children:
