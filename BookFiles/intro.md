@@ -1,6 +1,12 @@
 # Introduction
 
-I am a book about ... something! Wikipedia has [information about books](wiki:book): hover over the link for more information.
+## Welcome!
+I am a book about ... circuits and controls (and signals). Wikipedia has [information about books](wiki:book): hover over the link for more information.
+
+## Circuits are everywhere!
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
 
 % An admonition containing a note
 :::{note}

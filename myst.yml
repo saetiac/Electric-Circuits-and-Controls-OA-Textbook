@@ -6,18 +6,75 @@ project:
   description: Open-access textbook developed by Dr. Christopher Saetia and fellow instructors at Wake Forest University to teach and visualize electric circutis and control systems concepts.
   # keywords: []
   authors: [Christopher Saetia]
-  # github:
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  github: https://github.com/saetiac/Electric-Circuits-and-Controls-OA-Textbook
+  
+  # Table of Contents
   toc:
     - file: BookFiles/intro.md
-    - file: BookFiles/fundamental_concepts
+    
+    - file: BookFiles/Fundamental_Circuit_Concepts/Fundamental_Circuit_Concepts
+      title: Fundamental Concepts
       children:
-        - file: BookFiles/electric_forces
+        - file: BookFiles/Fundamental_Circuit_Concepts/Electric_Forces
+        - file: BookFiles/Fundamental_Circuit_Concepts/Kirchoff_Circuit_Laws
+        - file: BookFiles/Fundamental_Circuit_Concepts/Reactive_Components
+        - file: BookFiles/Fundamental_Circuit_Concepts/Semiconductor_Devices
           children:
-          - file: BookFiles/Sensors.md
-    - file: BookFiles/Digital_Circuits.md
-site:
+          - file: BookFiles/Fundamental_Circuit_Concepts/Diodes
+          - file: BookFiles/Fundamental_Circuit_Concepts/Transistors
+        - file: BookFiles/Fundamental_Circuit_Concepts/Operational_Amplifiers
+        - file: BookFiles/Fundamental_Circuit_Concepts/Sensors
+        - file: BookFiles/Fundamental_Circuit_Concepts/Motors
 
+    
+    - file: BookFiles/Circuit_Analysis_Techniques/Circuit_Analysis_Techniques
+      children:
+        - file: BookFiles/Circuit_Analysis_Techniques/Equivalent_Circuits_Analysis
+          children:
+          - file: BookFiles/Circuit_Analysis_Techniques/Voltage_Division
+          - file: BookFiles/Circuit_Analysis_Techniques/Mesh_Analysis
+          - file: BookFiles/Circuit_Analysis_Techniques/Thevenin
+          - file: BookFiles/Circuit_Analysis_Techniques/Superposition
+
+    - file: BookFiles/Circuit_Design/Circuit_Design
+      children:
+        - file: BookFiles/Circuit_Design/Diode_Circuits
+        - file: BookFiles/Circuit_Design/Transient_Circuits
+        - file: BookFiles/Circuit_Design/Filters
+        - file: BookFiles/Circuit_Design/Operational_Amplifier_Circuits
+
+    - file: BookFiles/Signal_Processing/Signal_Processing.md
+      children:
+        - file: BookFiles/Signal_Processing/Sampling
+        - file: BookFiles/Signal_Processing/Quantization
+        - file: BookFiles/Signal_Processing/Analog_to_Digital_Conversion_Circuits
+
+    - file: BookFiles/Digital_Circuits/Digital_Circuits.md
+      children:
+        - file: BookFiles/Digital_Circuits/Boolean_Logic
+        - file: BookFiles/Digital_Circuits/Digital_Logic_Gates
+
+    - file: BookFiles/Control_Systems/Control_Systems.md
+      children:
+        - file: BookFiles/Control_Systems/Stability
+        - file: BookFiles/Control_Systems/Dynamic_Response
+        - file: BookFiles/Control_Systems/PID_Controller
+
+    - file: BookFiles/Labs/Labs.md
+      children:
+      - file: BookFiles/Labs/EGR311_wk#01_labs
+
+    - file: BookFiles/Math_Basics/Math_Basics.md
+      children:
+      - file: BookFiles/Math_Basics/Complex_Numbers.md
+      - file: BookFiles/Math_Basics/Fourier_Series_and_Transforms.md
+      - file: BookFiles/Math_Basics/Laplace_Transforms.md
+      - file: BookFiles/Math_Basics/Linearity.md
+      - file: BookFiles/Math_Basics/Matrices.md
+      - file: BookFiles/Math_Basics/Differential_Equations.md
+
+#############################################################################
+site:
   parts:
     primary_sidebar_footer: BookFiles/primary-sidebar-footer.md
   template: book-theme
